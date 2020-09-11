@@ -109,17 +109,23 @@ body {
 
 /* Sección del evento*/ 
  h3 {
+    margin: 0;
     font-size:40px;
     color: #333333;
 }
 h4 {
+    margin-bottom: 30px;
     font-size:30px;
     color: #333333;
 }
 p {
     line-height: 2rem;
     font-weight: 400;
-    font-size:20px ;
+    font-size:18px ;
+}
+
+.where p, h4 {
+    margin: 10px auto;
 }
 
 .festival-contenedor {
@@ -127,12 +133,13 @@ p {
     margin-top:2rem;
 }
 
+
 .texto-principal {
     text-align: left;
   
 }
-
 .texto-principal p {
+
     font-weight: 300;
 }
 
@@ -143,14 +150,16 @@ p {
 
 
 
-@media (min-width:992px) {
+@media screen and (min-width:992px) {
     .festival-contenedor {
         display: grid;
         grid-template-columns:repeat(2, 1fr);
         grid-column-gap:2rem;
         text-align: center;
     }
+   
     .date {
+    
         display: flex;
         margin-top: 1.5rem!important;
     }
