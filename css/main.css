@@ -1,0 +1,162 @@
+/* colores 
+principal: #ffffff
+secundario: #8546c9
+tercero: #333333
+*/
+
+body {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.contenedor {
+    max-width: 1100%;
+    margin: 0 auto;
+}
+
+/* estilos al header, logo y nav.*/
+
+.hero {
+    background-image: url('../src/img/banner.jpg');
+    height: 100vh;
+    background-color: #ffffff;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+.header {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.barra {
+    position: absolute;
+    width: 100%;
+    top: 1rem;
+    padding: 1rem 0;
+
+}
+
+.barra .contenedor {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width:768px) {
+    .barra .contenedor {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+
+ .logo h3 {
+     text-align:center;
+     max-width: 20rem;
+    color: #8546c9;
+    font-size: 3.5rem;
+    margin: 1rem;
+}
+
+.logo  a {
+    text-decoration: none;
+}
+.nav-bar {
+    text-align: center;
+}
+.nav-bar ul  {
+    list-style: none;
+   margin-right:2rem;
+    display: flex;
+    flex-direction: column;
+    line-height:3rem ;
+    
+}
+
+.nav-bar ul li a {
+    font-size: 20px;
+    color: #333333;
+    font-weight: 500;
+    text-decoration: none;
+}
+ .boton {
+  background-color: #8546c9;
+  border-radius: 2rem;
+ padding: .5rem 1.3rem;
+ margin-top: 1rem;
+}
+.nav-bar .boton:hover{
+    background-color: #ffffff;
+}
+@media screen and (min-width:768px) {
+    .nav-bar {
+        flex: 0 0 35rem;
+        
+    }
+    .nav-bar ul {
+        flex-direction: row;
+        justify-content: space-between;
+        
+        
+    }
+}
+
+/* Sección del evento*/ 
+ h3 {
+    font-size:40px;
+    color: #333333;
+}
+h4 {
+    font-size:30px;
+    color: #333333;
+}
+p {
+    line-height: 2rem;
+    font-weight: 400;
+    font-size:20px ;
+}
+
+.festival-contenedor {
+    text-align: left;
+    margin-top:2rem;
+}
+
+.texto-principal {
+    text-align: left;
+  
+}
+
+.texto-principal p {
+    font-weight: 300;
+}
+
+
+.img-contenedor img {
+    width: 100%;
+}
+
+
+
+@media (min-width:992px) {
+    .festival-contenedor {
+        display: grid;
+        grid-template-columns:repeat(2, 1fr);
+        grid-column-gap:2rem;
+        text-align: center;
+    }
+    .date {
+        display: flex;
+        margin-top: 1.5rem!important;
+    }
+    
+    .where {
+    flex: 0 0 50%;
+    max-width: 50%;
+}   
+}
